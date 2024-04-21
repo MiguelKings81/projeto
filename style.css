@@ -39,7 +39,9 @@ body * {
 }
 
 #container {
-  width: 588px;
+  min-width: 258px;
+  width: 100%;
+  max-width: 588px;
   /*border: 1px solid red;*/
   size: cover;
   margin: 56px auto;
@@ -164,5 +166,3 @@ footer {
   display: block;
   border-radius: 9999px;
 }
-
-
