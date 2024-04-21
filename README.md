@@ -1,4 +1,4 @@
-<h1 align="center">git  Devlinks </h1>
+<h1 align="center"> Devlinks </h1>
 
 <p align="center"> Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
 <br>
