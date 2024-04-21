@@ -6,7 +6,7 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(assets/bg-desktop.jpg);
+  --bg-url: url(assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
@@ -16,7 +16,7 @@
 
 .light {
   --text-color: black;
-  --bg-url: url(assets/bg-desktop-light.jpg);
+  --bg-url: url(assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.1);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -25,12 +25,13 @@
 }
 
 body {
-  /*background-image: url(assets/bg-desktop.jpg);
+  /*background-image: url(assets/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100%;
 }
 
 body * {
@@ -44,7 +45,7 @@ body * {
   max-width: 588px;
   /*border: 1px solid red;*/
   size: cover;
-  margin: 56px auto;
+  margin: 56px auto 256px;
   padding: 24px;
 }
 
@@ -165,4 +166,14 @@ footer {
   -webkit-backdrop-filter: blur(4px);
   display: block;
   border-radius: 9999px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
